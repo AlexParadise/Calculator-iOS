@@ -17,6 +17,10 @@
 		40D59A332014752D0079AA69 /* JSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D59A322014752D0079AA69 /* JSLabel.swift */; };
 		66B36DB92B64ABCD004B6F1B /* KalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B36DB82B64ABCD004B6F1B /* KalculatorUITests.swift */; };
 		66B36DBB2B64ABCD004B6F1B /* KalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B36DBA2B64ABCD004B6F1B /* KalculatorUITestsLaunchTests.swift */; };
+		66B36DC62B64B343004B6F1B /* NumberSelectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B36DC52B64B343004B6F1B /* NumberSelectTest.swift */; };
+		66B36DC82B64B4CC004B6F1B /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B36DC72B64B4CC004B6F1B /* BaseTest.swift */; };
+		66B36DCA2B64BB94004B6F1B /* CalculatorPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B36DC92B64BB94004B6F1B /* CalculatorPage.swift */; };
+		66B36DCC2B64C519004B6F1B /* PerformanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B36DCB2B64C519004B6F1B /* PerformanceUITests.swift */; };
 		9D596A1D253763A500C9F6DA /* ioscalcwithtrig.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D596A1A253763A500C9F6DA /* ioscalcwithtrig.png */; };
 		9D596A1E253763A500C9F6DA /* ioscalcwithtrig2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D596A1B253763A500C9F6DA /* ioscalcwithtrig2.png */; };
 		9D596A1F253763A500C9F6DA /* Screen Shot 2018-01-21 at 17.07.32.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D596A1C253763A500C9F6DA /* Screen Shot 2018-01-21 at 17.07.32.png */; };
@@ -46,6 +50,10 @@
 		66B36DB62B64ABCD004B6F1B /* KalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66B36DB82B64ABCD004B6F1B /* KalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalculatorUITests.swift; sourceTree = "<group>"; };
 		66B36DBA2B64ABCD004B6F1B /* KalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		66B36DC52B64B343004B6F1B /* NumberSelectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberSelectTest.swift; sourceTree = "<group>"; };
+		66B36DC72B64B4CC004B6F1B /* BaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
+		66B36DC92B64BB94004B6F1B /* CalculatorPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorPage.swift; sourceTree = "<group>"; };
+		66B36DCB2B64C519004B6F1B /* PerformanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceUITests.swift; sourceTree = "<group>"; };
 		9D596A1A253763A500C9F6DA /* ioscalcwithtrig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ioscalcwithtrig.png; path = Screenshots/ioscalcwithtrig.png; sourceTree = "<group>"; };
 		9D596A1B253763A500C9F6DA /* ioscalcwithtrig2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ioscalcwithtrig2.png; path = Screenshots/ioscalcwithtrig2.png; sourceTree = "<group>"; };
 		9D596A1C253763A500C9F6DA /* Screen Shot 2018-01-21 at 17.07.32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screen Shot 2018-01-21 at 17.07.32.png"; path = "Screenshots/Screen Shot 2018-01-21 at 17.07.32.png"; sourceTree = "<group>"; };
@@ -117,10 +125,38 @@
 		66B36DB72B64ABCD004B6F1B /* KalculatorUITests */ = {
 			isa = PBXGroup;
 			children = (
+				66B36DC42B64B323004B6F1B /* Utils */,
+				66B36DC32B64B30F004B6F1B /* PageObjects */,
+				66B36DC22B64B276004B6F1B /* Tests */,
 				66B36DB82B64ABCD004B6F1B /* KalculatorUITests.swift */,
 				66B36DBA2B64ABCD004B6F1B /* KalculatorUITestsLaunchTests.swift */,
 			);
 			path = KalculatorUITests;
+			sourceTree = "<group>";
+		};
+		66B36DC22B64B276004B6F1B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				66B36DC52B64B343004B6F1B /* NumberSelectTest.swift */,
+				66B36DCB2B64C519004B6F1B /* PerformanceUITests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		66B36DC32B64B30F004B6F1B /* PageObjects */ = {
+			isa = PBXGroup;
+			children = (
+				66B36DC72B64B4CC004B6F1B /* BaseTest.swift */,
+				66B36DC92B64BB94004B6F1B /* CalculatorPage.swift */,
+			);
+			path = PageObjects;
+			sourceTree = "<group>";
+		};
+		66B36DC42B64B323004B6F1B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +277,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66B36DCC2B64C519004B6F1B /* PerformanceUITests.swift in Sources */,
+				66B36DC82B64B4CC004B6F1B /* BaseTest.swift in Sources */,
+				66B36DCA2B64BB94004B6F1B /* CalculatorPage.swift in Sources */,
+				66B36DC62B64B343004B6F1B /* NumberSelectTest.swift in Sources */,
 				66B36DBB2B64ABCD004B6F1B /* KalculatorUITestsLaunchTests.swift in Sources */,
 				66B36DB92B64ABCD004B6F1B /* KalculatorUITests.swift in Sources */,
 			);

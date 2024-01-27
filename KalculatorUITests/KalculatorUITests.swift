@@ -1,11 +1,3 @@
-//
-//  KalculatorUITests.swift
-//  KalculatorUITests
-//
-//  Created by Oleksandr Babanskyi on 1/26/24.
-//  Copyright © 2024 Jogendra Singh. All rights reserved.
-//
-
 import XCTest
 
 final class KalculatorUITests: XCTestCase {
